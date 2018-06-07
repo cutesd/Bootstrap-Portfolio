@@ -1,0 +1,249 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+	width:100%;
+	height:100%;
+    margin: 0 0 60px 0; /* Margin bottom by footer height */
+}
+
+
+body{
+	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+	color: #777;
+	background-color: #e5e5e5;
+	background: url('../images/bg-stripes.png');
+}
+
+h1, h2{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h2{
+	line-height: 57px;
+    font-size: 2rem;
+    color: #4aaaa5;
+}
+
+.container {
+    max-width: 980px;
+}
+
+
+/* ==============  NAVBAR ============ */
+.navbar{
+    height:90px;
+    background-color: #FFF;
+	border-bottom: 2px solid #CCC;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    line-height: 32px;
+    background-color: #4aaaa5;
+    color: #FFF!important;
+    padding: 29px 2.5rem;
+    margin: 0;
+}
+
+.nav-item{
+    padding: 30px 0!important;
+    transition: background-color 0.5s ease;
+}
+
+.nav-item:hover {
+    background-color: #ED4A4E;
+}
+
+.nav-item:nth-of-type(2) a{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.nav-item:nth-of-type(2):hover a{
+    border-left:1px solid rgba(204,204,204,0);
+    border-right:1px solid rgba(204,204,204,0);
+}
+
+.nav-item:hover .nav-link{
+    color:#FFF!important;
+    cursor:pointer;
+}
+
+.nav-link{
+    line-height: 18px;
+    padding: 6px 16px!important;
+    color:#aaa!important;
+    transition: background-color 0.5s ease;
+}
+
+.active, .active:hover {
+	background-color: inherit;
+    cursor:default;
+}
+
+.active a, .active:hover .nav-link{
+    color:#4aaaa5!important;
+    cursor:default;
+}
+
+.keep-border, .nav-item:hover .keep-border{
+    border-left:1px solid #ccc!important;
+    border-right:1px solid #ccc!important;
+}
+
+/* ============== CONTENT ===============*/
+
+.main{
+	background-color:#FFF;
+	padding:2rem;
+	margin-top:1rem;
+    border: 1px solid #ddd;
+    min-height: 33%;
+}
+
+.main p{
+	line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.portrait{
+	width:150px;
+	height:150px;
+    margin: 0 1.75rem .5rem 0;
+}
+
+/* =============== PORTFOLIO ============ */
+
+.row{
+    margin:0!important;
+}
+ 
+.p-img{
+    position:relative;
+    margin: 1rem 3rem 2rem 0;
+}
+
+ .image {
+   opacity: 1;
+   display: block;
+   width: 100%;
+   height: auto;
+   transition: .5s ease;
+   backface-visibility: hidden;
+ }
+ 
+ .middle {
+   transition: .5s ease;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-align: center;
+ }
+ 
+ .p-img:hover .image {
+   opacity: 0.3;
+   box-shadow: 0 0 20px #000;
+ }
+ 
+ .p-img:hover .middle {
+   opacity: 1;
+ }
+ 
+ .text {
+   color: #4aaaa5;
+   font-size: 16px;
+   padding: 16px 9px;
+ }
+ 
+ .p-img h2{
+    position: absolute; 
+    top: 185px; 
+    left: 0; 
+    width: 100%;
+    background-color: #4aaaa5;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center; 
+ }
+ 
+ .p-img:hover h2{
+     display:none;
+ }
+ 
+ 
+ .clear{
+     float:none;
+     padding:20px;
+     margin-bottom:6rem;
+ }
+
+/* =============== CONTACT ============== */
+
+
+input[type="text"], input[type="email"], textarea{
+	font-size:.9rem;
+	color:#777;
+}
+
+textarea{
+    line-height:1.1!important;
+}
+
+button[type="submit"]{
+	background-color:#4aaaa5;
+	color:#FFF;
+	width:auto;
+	font-size:1.1rem;
+	padding:10px;
+    margin-top:1rem;
+    border-radius:0;
+	transition: 0.5s ease;
+}
+
+button[type="submit"]:hover{
+	background-color:#ED4A4E;
+	border-color:#ED4A4E;
+    cursor:pointer;
+}
+
+/* ===============  FOOTER ============== */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #666;
+}
+
+.top{
+	background-color:#4aaaa5;
+	height: 10px;
+}
+
+.bottom{
+	background-color: #666;
+	height: 50px;
+}
+
+.copyright{
+    color:#ccc;
+	font-size:.75rem;
+}
+    
+
+
+
+
+
+
+
