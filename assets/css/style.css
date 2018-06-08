@@ -23,21 +23,30 @@ h1, h2{
 }
 
 h2{
-	line-height: 57px;
     font-size: 2rem;
     color: #4aaaa5;
+    padding: 10px 0;
 }
 
-.container {
-    max-width: 980px;
+.row{
+    margin-right:0!important;
+    margin-left:0!important;
 }
 
+.bg-teal{
+    background-color: #4aaaa5;
+}
 
 /* ==============  NAVBAR ============ */
 .navbar{
-    height:90px;
     background-color: #FFF;
-	border-bottom: 2px solid #CCC;
+    border-bottom: 2px solid #CCC;
+    padding:0;
+}
+
+.navbar-nav{
+    flex-direction: row!important;
+    max-width: 275px;
 }
 
 .navbar-brand{
@@ -47,6 +56,7 @@ h2{
     color: #FFF!important;
     padding: 29px 2.5rem;
     margin: 0;
+    width: 340px;
 }
 
 .nav-item{
@@ -75,7 +85,7 @@ h2{
 
 .nav-link{
     line-height: 18px;
-    padding: 6px 16px!important;
+    padding: 2px 16px!important;
     color:#aaa!important;
     transition: background-color 0.5s ease;
 }
@@ -100,9 +110,9 @@ h2{
 .main{
 	background-color:#FFF;
 	padding:2rem;
-	margin-top:1rem;
+	/* margin-top:1rem; */
     border: 1px solid #ddd;
-    min-height: 33%;
+    /* min-height: 33%; */
 }
 
 .main p{
@@ -117,10 +127,6 @@ h2{
 }
 
 /* =============== PORTFOLIO ============ */
-
-.row{
-    margin:0!important;
-}
  
 .p-img{
     position:relative;
@@ -164,7 +170,7 @@ h2{
  
  .p-img h2{
     position: absolute; 
-    top: 185px; 
+    bottom: 0px; 
     left: 0; 
     width: 100%;
     background-color: #4aaaa5;
@@ -205,7 +211,8 @@ button[type="submit"]{
 	padding:10px;
     margin-top:1rem;
     border-radius:0;
-	transition: 0.5s ease;
+    transition: background-color 0.5s ease,
+                border-color 0.5s ease;
 }
 
 button[type="submit"]:hover{
@@ -241,7 +248,11 @@ button[type="submit"]:hover{
 }
     
 
-
+@media screen and (max-width: 768px){
+    .nav-item {
+        padding: 10px 0!important;
+    }
+}
 
 
 
