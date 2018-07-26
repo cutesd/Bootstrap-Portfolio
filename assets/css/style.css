@@ -205,6 +205,11 @@ h2{
      color:white;
  }
 
+ .portfolio-link-text{
+    display:inline-block;
+    padding:2px 3px;
+ }
+
 /* =============== CONTACT ============== */
 
 
